@@ -1,12 +1,10 @@
-# CP1_Final Project Template
 
-Below a suggested layoutout for the README file
+# Audio Dispersion with FFT
 
----
+This is the final project on my class Computational Physics (Fall 2021). I am interested to do a simple task. Using FFT seperate the audio frequencies from audio data . I am going to take some audio data using the phyphox app. 
 
-# Your Title goes here
 
-This is the final project on my class Computational Physics.
+
 I want to do this, and this is how I achieve it.
 
 ## Project Structure
