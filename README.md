@@ -1,40 +1,56 @@
 
 # Audio Dispersion with FFT
 
-This is the final project on my class Computational Physics (Fall 2021). I am interested to do a simple task. Using FFT seperate the audio frequencies from audio data . I am going to take some audio data using the phyphox app. 
+This is the final project on my class Computational Physics (Fall 2021). I am interested to do a simple task. Using FFT seperate the audio frequencies from audio data . My goal is to clean out noisy audio data using FFT. I am going to take some audio data using the phyphox app. More about phyphox could be found here [PhyPhox](http://phyphox.org). 
 
-
-
-I want to do this, and this is how I achieve it.
 
 ## Project Structure
 
-To read about and follow my project I suggest reading the documentation including all references *link here* first.
-Please note the code is under the following license *link here* and the documentation under this license  *link here*.
-The main Jupyter notebook which does this can be found *link here*.
-The necessary utility functions written in *my favorite programming language* are in the *link here* UtilityFunctions folder.
-To run the Jupyter notebook I suggest using the docker image *link here*.
+This project is focused on audio dispersion. There are 4 key parts for this project which are : a) Waves b) Fourier Transfor c) Phyphox and d)Example (in Jupyter noteboke) .
+The codes are under the following license  *http://www.apache.org/licenses/*
+More about waves can be found here at * https://openstax.org/books/university-physics-volume-1/pages/16-introduction *. 
+The examples and codes regarding FFT can be found here at * https://pythonnumericalmethods.berkeley.edu/notebooks/chapter24.03-Fast-Fourier-Transform.html *.
+The project is written on jupyter notebook in this repository. I have used the docer image * ubsuny/cp1-hw8 * to tun this jupyter notebook. 
 There is also a YouTube video *link here*.
+
+To read about and follow my project I suggest reading the documentation including all references. 
+
+
 
 
 ## Setup
 
 The following commands get you started:
 
-``` zsh
-docker run *mydocker command*
-```
+Firt , I  Cloned the ripository into local computer with the following command :
 
-Then do this and that to run the Jupyter notebook in your browser.
+git clone "link to  the repository" 
 
-To run an optimized version of the algorithm I implemented you have to use `ctypes` and compile the files *link here* the following way:
+The from inside the repository I have run my docker image.
 
-``` zsh
-docker run bash
-g++ compile my code
-```
+Running docker image in terminal : 
+ 
+docker run --rm -v ${PWD}:/results -p 8888:8888 ubsuny/cp1-hw8:latest
+
+This will provide a link for opening the juphyter notebook in browser. Just copy the link and paste it in web browser and it will open the jupyter notebook. 
+
+
+Converting to pdf :
+
+fromt the terminal I have used the following command to get the pdf file:
+
+pandoc audio_disperson.ipynb -o audio_dispersion.pdf   
+
+It will convert the ipynb file to pdf .
+
 
 ## Participation
 
 If you want to participate feel free open an issue with the appropiate labels and/or fork my project and create a pull request against the *dev* branch.
 
+
+
+References : 
+
+a)https://openstax.org/books/university-physics-volume-1/pages/16-introduction
+b)https://phyphox.org
